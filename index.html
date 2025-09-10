@@ -10,54 +10,119 @@
       padding: 0;
       background: #f4f4f9;
       color: #333;
+      line-height: 1.6;
     }
+
     header {
       background: #4CAF50;
       color: white;
-      padding: 20px;
+      padding: 30px 20px;
       text-align: center;
     }
-    section {
-      padding: 20px;
+
+    header img {
+      width: 100%;
       max-width: 800px;
-      margin: auto;
+      border-radius: 10px;
+      margin-top: 20px;
     }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 30px 20px;
+      max-width: 900px;
+      margin: 20px auto;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h1, h2 {
+      margin-top: 0;
+    }
+
     footer {
       text-align: center;
-      padding: 15px;
+      padding: 20px;
       background: #333;
       color: white;
-      margin-top: 20px;
+      margin-top: 30px;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 5px 0;
+      }
+      header img {
+        width: 100%;
+      }
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Free Education for Poor Kids</h1>
     <p>Spreading knowledge, hope, and opportunities</p>
+    <nav>
+      <a href="#about">About</a> |
+      <a href="#projects">Projects</a> |
+      <a href="#contact">Contact</a>
+    </nav>
+    <img src="images/kids-learning.jpg" alt="Kids Learning">
   </header>
 
-  <section>
+  <section id="about">
     <h2>About Our Initiative</h2>
     <p>
-      Our initiative, <strong>"Free Education for Kids"</strong>, is dedicated to empowering underprivileged children 
-      through free learning opportunities. We provide tutoring in basic subjects, along with guidance in 
-      critical thinking, storytelling, arts, and early coding skills.  
+      The <strong>“Free Education for Poor Kids”</strong> initiative is a community-based program founded to provide equal educational opportunities to children from disadvantaged backgrounds. Many children cannot attend private coaching or access resources due to financial constraints. This initiative creates a welcoming environment where children receive free learning support.
     </p>
     <p>
-      I personally lead and coordinate these activities as a volunteer, aiming to make education accessible 
-      for children who cannot afford it. So far, over 50 children in our community have benefited, developing 
-      both academic skills and personal confidence.
+      I personally teach core subjects like mathematics, English, and science, while also encouraging storytelling, drawing, and creative thinking exercises. I’ve also introduced basic technology and problem-solving skills. Education here is not just about books; it inspires confidence and curiosity.
     </p>
     <p>
-      Our long-term vision is to expand this initiative, reaching even more children, and ensuring that 
-      poverty does not limit their future. Education is a right, not a privilege, and we are committed to 
-      making it a reality for those in need.
+      More than fifty children have benefited so far, showing noticeable improvement in academics and personal growth. Parents in the community have expressed gratitude, witnessing their children gaining confidence, discipline, and motivation.
     </p>
+    <p>
+      My long-term vision is to expand this initiative, involving more volunteers and reaching additional communities. Poverty should never limit access to knowledge. By offering free education, we shape a brighter future and ensure education remains a universal right.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>Our Activities</h2>
+    <ul>
+      <li>Free math and English classes</li>
+      <li>Storytelling and drawing sessions</li>
+      <li>Basic coding and technology workshops</li>
+      <li>Community mentorship and guidance</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: fahim@example.com</p>
+    <p>Phone: +880 1XXXXXXXXX</p>
   </section>
 
   <footer>
     <p>Created with ❤️ by Fahim Ahmed</p>
   </footer>
+
 </body>
 </html>
